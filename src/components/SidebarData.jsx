@@ -4,12 +4,14 @@ import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
 import { FaUserAlt } from "react-icons/fa";
 import { FaVideo } from "react-icons/fa";
+import { IoMdVideocam } from "react-icons/io";
 import "./Sidebar.css";
 
 export const SidebarData = [
   {
     title: "VIDEOS",
     path: "/",
+    icon: <IoMdVideocam color = "grey"/>,
     cName: "nav-text",
   },
   {
