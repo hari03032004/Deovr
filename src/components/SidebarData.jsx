@@ -9,6 +9,7 @@ import { CiCamera } from "react-icons/ci";
 import { MdOutlineSubscriptions } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
 import { MdOutlinePlaylistAddCheckCircle } from "react-icons/md";
+import { MdOutlineForum } from "react-icons/md";
 import { LiaCrownSolid } from "react-icons/lia";
 import { LiaDownloadSolid } from "react-icons/lia";
 
@@ -60,6 +61,24 @@ export const SidebarData = [
     title: "PUBLIC PLAYLISTS",
     path: "/PublicPlayists",
     icon: <MdOutlinePlaylistAddCheckCircle color="grey"/>,
+    cName: "nav-text",
+  },
+  {
+    title: "WATCH LATER",
+    path: "/WatchLater",
+    icon: <MdOutlinePlaylistAddCheckCircle color="grey"/>,
+    cName: "nav-text",
+  },
+  {
+    title: "FORUM",
+    path: "/Forum",
+    icon: <MdOutlineForum color="lightgrey"/>,
+    cName: "nav-text",
+  },
+  {
+    title: "FORUM",
+    path: "/Forum",
+    icon: <MdOutlineForum color="lightgrey"/>,
     cName: "nav-text",
   },
 ];

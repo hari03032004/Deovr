@@ -20,7 +20,7 @@ function Navbar() {
               <h1>DeoVR</h1>
             </li>
             {SidebarData.map((item, index) => {
-              if(index<4){
+              if(index<8){
                 return (
                 <li key={index} className={item.cName}>
                   <Link to={item.path}>
@@ -30,15 +30,17 @@ function Navbar() {
                 </li>
               );
               }
-              else if(index === 4){
+              else if(index === 8){
                 return (
                 <>
+                  <div className="line"></div>
                   <li key={index} className={item.cName}>
                   <Link to={item.path}>
                     {item.icon}
                     <span >{item.title}</span>
                   </Link>
-                </li>
+                  </li>
+                  <div className="line"></div>
                 </>
                 
               );
