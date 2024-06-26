@@ -1,9 +1,4 @@
-import React from "react";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
-import { FaUserAlt } from "react-icons/fa";
-import { FaVideo } from "react-icons/fa";
+import React from "react";;
 import { IoMdVideocam } from "react-icons/io";
 import { CiCamera } from "react-icons/ci";
 import { MdOutlineSubscriptions } from "react-icons/md";
