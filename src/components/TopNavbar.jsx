@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
 import { IoSearchSharp } from "react-icons/io5";
 import { IconContext } from "react-icons";
-import "./Sidebar.css";  
+import "./Sidebar.css"; 
+import "../index.css" 
+import Searchbar from "./Searchbar";
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(true);
@@ -11,20 +13,9 @@ function Navbar() {
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
-    <>
-      <IconContext.Provider value={{ color: "black" }}>
-        <nav className="topNavbar">
-          <div className="Search">
-            <IoSearchSharp />
-          </div>
-          <div className="left">
-            <div className=""></div>
-            <div className=""></div>
-          </div>
-        </nav>
-      </IconContext.Provider>
-    </>
+    <h1>Helellllladjglkdihwjdslfjosdjfkldsjj9jof</h1>
   );
+
 }
 
 export default Navbar;

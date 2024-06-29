@@ -5,8 +5,9 @@ import { MdOutlineSubscriptions } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
 import { MdOutlinePlaylistAddCheckCircle } from "react-icons/md";
 import { MdOutlineForum } from "react-icons/md";
-import { LiaCrownSolid } from "react-icons/lia";
 import { LiaDownloadSolid } from "react-icons/lia";
+import { FaCrown } from "react-icons/fa";
+
 
 import "./Sidebar.css";
 
@@ -37,14 +38,14 @@ export const SidebarData = [
   {
     title: "PREMIUM",
     path: "/Premium",
-    icon: <LiaCrownSolid color="grey"/>,
-    cName: "nav-text",
+    icon: <FaCrown  color="black"/>,
+    cName: "nav-text premium",
   },
   {
     title: "MY FAVOURITES",
     path: "/MyFavourites",
     icon: <CiHeart color="grey"/>,
-    cName: "nav-text",
+    cName: "nav-text ",
   },
   {
     title: "MY SUBSCRIPTIONS",
