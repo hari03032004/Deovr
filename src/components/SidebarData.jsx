@@ -42,7 +42,7 @@ export const SidebarData = [
     title: "PREMIUM",
     path: "/Premium",
     icon: <LiaCrownSolid color="grey"/>,
-    cName: "nav-text",
+    cName: "nav-text-premium",
   },
   {
     title: "MY FAVOURITES",
@@ -61,5 +61,5 @@ export const SidebarData = [
     path: "/PublicPlayists",
     icon: <MdOutlinePlaylistAddCheckCircle color="grey"/>,
     cName: "nav-text",
-  },
+  }
 ];

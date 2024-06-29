@@ -15,7 +15,7 @@
   height: 100px;
   margin-bottom: 20px;
 }
-/* Navbar CSS */
+
 .navbar {
   background-color: #ffffff;
   height: 80px;
@@ -120,3 +120,49 @@ span {
   margin-top: 0px;
   margin-left: -3px;
 }
+
+.nav-text-premium {
+  background-color: #fcd94d;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 100px;
+  padding-left: 35px;
+}
+
+.nav-text-premium:hover {
+  cursor: pointer;
+  background-color: #FFF078; 
+}
+
+.nav-text-premium .icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+/*.nav-text-premium
+{
+  background-color: #FFD700;
+  font-weight: 10000;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 5px;
+  padding-right: 100px;
+  padding-left: 35px;
+  cursor: pointer;
+}
+.nav-text-premium:hover {
+  background-color: #FFF078; 
+  text-decoration: underline;
+}*/

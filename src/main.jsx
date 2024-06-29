@@ -1,5 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import title from "./usetitle";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,10 +16,15 @@ import MyFavourites from "./routes/MyFavourites";
 import PublicPlaylists from "./routes/PublicPlaylists"
 import MySubscriptions from "./routes/MySubscriptions"
 import "./components/Sidebar.css";
+import Header from "./components/Header";
+import RouteTitle from "./Routetitle";
+
 
 const AppLayout = () => (
   <>
+    <Header />
     <Navbar />
+    <RouteTitle />
     <Outlet />
   </>
 );
