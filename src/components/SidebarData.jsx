@@ -1,14 +1,10 @@
-import React from "react";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
-import { FaUserAlt } from "react-icons/fa";
-import { FaVideo } from "react-icons/fa";
+import React from "react";;
 import { IoMdVideocam } from "react-icons/io";
 import { CiCamera } from "react-icons/ci";
 import { MdOutlineSubscriptions } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
 import { MdOutlinePlaylistAddCheckCircle } from "react-icons/md";
+import { MdOutlineForum } from "react-icons/md";
 import { LiaCrownSolid } from "react-icons/lia";
 import { LiaDownloadSolid } from "react-icons/lia";
 
@@ -61,5 +57,5 @@ export const SidebarData = [
     path: "/PublicPlayists",
     icon: <MdOutlinePlaylistAddCheckCircle color="grey"/>,
     cName: "nav-text",
-  }
+  },
 ];
