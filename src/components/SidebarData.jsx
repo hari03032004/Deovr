@@ -7,6 +7,7 @@ import { MdOutlinePlaylistAddCheckCircle } from "react-icons/md";
 import { MdOutlineForum } from "react-icons/md";
 import { LiaCrownSolid } from "react-icons/lia";
 import { LiaDownloadSolid } from "react-icons/lia";
+import { FaFacebook } from "react-icons/fa6";
 
 import "./Sidebar.css";
 
@@ -38,7 +39,7 @@ export const SidebarData = [
     title: "PREMIUM",
     path: "/Premium",
     icon: <LiaCrownSolid color="grey"/>,
-    cName: "nav-text",
+    cName: "nav-text-premium",
   },
   {
     title: "MY FAVOURITES",
@@ -71,9 +72,9 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "FORUM",
-    path: "/Forum",
-    icon: <MdOutlineForum color="lightgrey"/>,
+    title: "FACEBOOK",
+    path: "/FACEBOOK",
+    icon: <FaFacebook color = "lightgrey"/>,
     cName: "nav-text",
   },
 ];
