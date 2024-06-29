@@ -1,15 +1,17 @@
-import React from "react";;
+import React from "react";
 import { IoMdVideocam } from "react-icons/io";
 import { CiCamera } from "react-icons/ci";
 import { MdOutlineSubscriptions } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
 import { MdOutlinePlaylistAddCheckCircle } from "react-icons/md";
 import { MdOutlineForum } from "react-icons/md";
-import { LiaCrownSolid } from "react-icons/lia";
 import { LiaDownloadSolid } from "react-icons/lia";
+import { FaCrown } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
-
+import { IoMdBookmark } from "react-icons/io";
+import { FaRegCircle } from "react-icons/fa";
 import "./Sidebar.css";
+import ToggleButton from "./ToggleButton";
 
 export const SidebarData = [
   {
@@ -38,14 +40,14 @@ export const SidebarData = [
   {
     title: "PREMIUM",
     path: "/Premium",
-    icon: <LiaCrownSolid color="grey"/>,
-    cName: "nav-text-premium",
+    icon: <FaCrown  color="black"/>,
+    cName: "nav-text premium",
   },
   {
     title: "MY FAVOURITES",
     path: "/MyFavourites",
     icon: <CiHeart color="grey"/>,
-    cName: "nav-text",
+    cName: "nav-text ",
   },
   {
     title: "MY SUBSCRIPTIONS",
@@ -62,7 +64,7 @@ export const SidebarData = [
   {
     title: "WATCH LATER",
     path: "/WatchLater",
-    icon: <MdOutlinePlaylistAddCheckCircle color="grey"/>,
+    icon: <IoMdBookmark color = "lightgrey"/>,
     cName: "nav-text",
   },
   {
@@ -75,6 +77,16 @@ export const SidebarData = [
     title: "FACEBOOK",
     path: "/FACEBOOK",
     icon: <FaFacebook color = "lightgrey"/>,
+    cName: "nav-text",
+  },
+  {
+    title: "180",
+    icon: <ToggleButton />,
+    cName: "nav-text",
+  },
+  {
+    title: "360",
+    icon: <ToggleButton />,
     cName: "nav-text",
   },
 ];
