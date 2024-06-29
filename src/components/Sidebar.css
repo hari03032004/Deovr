@@ -22,6 +22,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
 }
 
 .menu-bars {
@@ -34,14 +35,21 @@
 .nav-menu {
   background-color: #ffffff;
   width: 250px;
-  height: 100vh;
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
   left: -100%;
   transition: 850ms;
+  height: 100%;
+  overflow-y: auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.nav-menu::-webkit-scrollbar {
+  width: 6px; 
+}
+.nav-menu::-webkit-scrollbar-thumb {
+  background-color: gray; /* Scrollbar thumb color */
 }
 
 .nav-menu.active {
@@ -119,4 +127,11 @@ span {
 .svg.d{
   margin-top: 0px;
   margin-left: -3px;
+}
+
+.line{
+  height: 1.5px;
+  width: 200px;
+  background-color: lightgray;
+  margin-left: 20px;
 }
