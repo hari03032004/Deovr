@@ -80,6 +80,7 @@
 }
 
 .nav-text a:hover {
+  color: #000;
   background-color: lightgray;
 }
 
