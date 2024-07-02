@@ -7,9 +7,9 @@ import { MdOutlinePlaylistAddCheckCircle } from "react-icons/md";
 import { MdOutlineForum } from "react-icons/md";
 import { LiaDownloadSolid } from "react-icons/lia";
 import { FaCrown } from "react-icons/fa";
-
-
+import { FaFacebook } from "react-icons/fa";
 import "./Sidebar.css";
+import ToggleButton from "./ToggleButton";
 
 export const SidebarData = [
   {
@@ -72,9 +72,14 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "FORUM",
-    path: "/Forum",
-    icon: <MdOutlineForum color="lightgrey"/>,
+    title: "facebook",
+    path: "/facebook",
+    icon: <FaFacebook color="lightgrey"/>,
     cName: "nav-text",
   },
+  {
+    title: "180",
+    icon: <ToggleButton/>,
+    cName: "nav-text",
+  }
 ];
