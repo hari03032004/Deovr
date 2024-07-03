@@ -8,6 +8,8 @@ import "../index.css"
 import Searchbar from "./Searchbar";
 import Button from "./Button";
 import { FaCrown } from "react-icons/fa";
+import {TopNavbarData} from "./TopNavbarData"
+
 function TopNavbar() {
   const [sidebar, setSidebar] = useState(true);
 

@@ -3,7 +3,7 @@ import "./TopNavbar.css";
 import { RiVipCrown2Fill } from "react-icons/ri";
 import { FaCloudUploadAlt } from "react-icons/fa";
 
-export const SidebarData = [
+export const TopNavbarData = [
   {
     title: "GET PREMIUM",
     path: "/payment/premium",
@@ -18,7 +18,7 @@ export const SidebarData = [
   },
   {
     title: "SIGN IN",
-    path: "/user/login",
+    path: "/user",
     icon: <RiVipCrown2Fill />,
     cName: "topbar-text",
   },
