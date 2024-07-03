@@ -58,7 +58,7 @@ button:focus-visible {
 }
 .layout{
   display: grid;
-  grid-template-columns: 245px 1fr; /* Sidebar 200px wide, main content takes the rest */
+  grid-template-columns: 260px 1fr;
   grid-gap: 10px;
   height: 100vh;
 }
@@ -67,7 +67,7 @@ button:focus-visible {
   justify-content: space-between;
   width: 80vw;
   height: 10vh;
-  margin:17px;
+  margin-top: 20px;
 }
 
 .search-bar{
@@ -120,4 +120,81 @@ button:focus-visible {
 }
 .button:hover{
   opacity: 0.85;
+}
+.Heading{
+  font-size: 1.5rem;
+  margin: 20px;
+  font-weight: 700;
+}
+.button-align{
+  display: flex;
+  margin: 20px;
+}
+.video-grid{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr ;
+  margin: 25px;
+}
+.video-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 270px;
+  align-items: center;
+}
+.video{
+  height: 150px;
+  width: 250px;
+  position: relative;
+}
+video{
+  height: 150px;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  object-fit: cover;
+  position: relative;
+}
+.video-title{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.video-profile{
+  height: 30px;
+  width: 30px;
+  border-radius: 19px;
+  background-color: lightgrey;
+  margin-right: 2px;
+}
+.video-name{
+  font-weight: 700;
+  font-size: 1rem;
+}
+.video-content{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+.video-description{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 0.95rem;
+  color: #666666;
+  margin-left: 34px;
+}
+.premium-icon{
+  height: 25px;
+  width: 25px;
+  border-radius: 15px;
+  z-index: 20;
+  position: absolute;
+  background-color: #F9d049;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 120px;
+  left: 215px;
 }

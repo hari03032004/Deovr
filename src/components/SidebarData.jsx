@@ -68,13 +68,13 @@ export const SidebarData = [
   {
     title: "FORUM",
     path: "/Forum",
-    icon: <MdOutlineForum color="lightgrey"/>,
+    icon: <MdOutlineForum color="grey"/>,
     cName: "nav-text",
   },
   {
-    title: "facebook",
+    title: "FACEBOOK",
     path: "/facebook",
-    icon: <FaFacebook color="lightgrey"/>,
+    icon: <FaFacebook color="grey"/>,
     cName: "nav-text",
   },
   {

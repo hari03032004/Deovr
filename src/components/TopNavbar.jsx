@@ -14,18 +14,14 @@ function TopNavbar() {
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
-    <div className="layout">
-      <div> </div>
       <div className="container">
         <Searchbar/>
         <div className="topnavbar-button">
           <Button name="GET PREMIUM" width="150px" bgcolor="#F9d041" color="#4d4321" icon="crown"/>
           <Button name="UPLOAD" width="100px" bgcolor="#FF6D55" color="#00000099" icon = "upload"/>
           <Button name="SIGN IN" width="100px" bgcolor="transparent" color="black" />
-
         </div>
       </div>
-    </div>
   );
 
 }
