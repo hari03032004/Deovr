@@ -64,6 +64,10 @@ const router = createBrowserRouter([
         path: "/publicplaylists",
         element: <PublicPlaylists />,
       },
+      {
+        path: "/user",
+        element: <PublicPlaylists />,
+      },
     ],
   },
 ]);

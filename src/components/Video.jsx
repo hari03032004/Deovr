@@ -9,7 +9,8 @@ export default function Video() {
       <div className='video' >
         <video 
           src="output.mp4" 
-          typeof='type="video/mp4"'>
+          typeof='type="video/mp4"'
+          controls>
         </video>
         <div className='premium-icon'>
           <FaCrown  color="black"/>
