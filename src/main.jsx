@@ -12,8 +12,9 @@ import Originals from "./routes/Originals";
 import GetVrPlayer from "./routes/GetVrPlayer";
 import Premium from "./routes/Premium";
 import MyFavourites from "./routes/MyFavourites";
-import PublicPlaylists from "./routes/PublicPlaylists"
-import MySubscriptions from "./routes/MySubscriptions"
+import PublicPlaylists from "./routes/PublicPlaylists";
+import Home from "./routes/Home";
+import MySubscriptions from "./routes/MySubscriptions";
 import "./components/Sidebar.css";
 
 const AppLayout = () => (
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     element: <AppLayout />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "/",
         element: <Videos />,
