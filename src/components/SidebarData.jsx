@@ -81,5 +81,40 @@ export const SidebarData = [
     title: "180",
     icon: <ToggleButton/>,
     cName: "nav-text",
-  }
+  },
+  {
+    title: "360",
+    icon: <ToggleButton/>,
+    cName: "nav-text",
+  },
+  {
+    title: "8K",
+    icon: <ToggleButton/>,
+    cName: "nav-text",
+  },
+  {
+    title: "Spatial audio",
+    icon: <ToggleButton/>,
+    cName: "nav-text",
+  },
+  {
+    title: "120 fps",
+    icon: <ToggleButton/>,
+    cName: "nav-text",
+  },
+  {
+    title: "Passthrough",
+    icon: <ToggleButton/>,
+    cName: "nav-text",
+  },
+  {
+    title: "Show flat",
+    icon: <ToggleButton/>,
+    cName: "nav-text",
+  }, {
+    title: "Premium only",
+    icon: <ToggleButton/>,
+    cName: "nav-text",
+  },
+
 ];
