@@ -116,5 +116,46 @@ export const SidebarData = [
     icon: <ToggleButton/>,
     cName: "nav-text",
   },
-
+  {
+    title: "Art",
+    path: "/facebook",
+    cName: "nav-text",
+  }, {
+    title: "ASMR",
+    path: "/facebook",
+    cName: "nav-text",
+  }, {
+    title: "Dance",
+    path: "/facebook",
+    cName: "nav-text",
+  }, {
+    title: "Guided Tour",
+    path: "/facebook",
+    cName: "nav-text",
+  }, {
+    title: "Gameplay",
+    path: "/facebook",
+    cName: "nav-text",
+  }, {
+    title: "Music",
+    path: "/facebook",
+    cName: "nav-text",
+  }, {
+    title: "Nature",
+    path: "/facebook",
+    cName: "nav-text",
+  }, {
+    title: "Travel",
+    path: "/facebook",
+    cName: "nav-text",
+  }, {
+    title: "Creators",
+    path: "/facebook",
+    cName: "nav-text",
+  },
+  {
+    title: "View More",color:"#3390FF",
+    path: "/ViewMore",
+    cName: "nav-text ",
+  },
 ];
