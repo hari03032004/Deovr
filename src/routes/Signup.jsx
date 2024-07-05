@@ -7,6 +7,7 @@ import { FaEyeSlash } from "react-icons/fa6";
 import { FaEye } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import TopNavbar from '../components/TopNavbar';
+import { Link } from 'react-router-dom';
 export default function Signup() {
   const [eye,setEye]=useState(false);
   function handleClick(){
@@ -69,12 +70,14 @@ export default function Signup() {
                 color="black"
                 width="300px"
               />
-              <Button
+              <Link to="/user/signin">
+                <Button
                 name='SIGN IN'
                 bgcolor="transparent"
                 color="#39BAE5"
                 width="300px"
-              />
+                />
+              </Link>
             </div>
           </div>
         </div>
