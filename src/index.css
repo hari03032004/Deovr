@@ -198,16 +198,30 @@ video{
   bottom: 120px;
   left: 215px;
 }
+.Like-com{
+  z-index: 20;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 90px;
+  bottom: 5px;
+  left: 10px;
+}
+.Like-com p{
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
 .sign-outer{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  border: 1px solid magenta;
+  height: 80%;
+  width: 100%;
 }
 .sign-inner{
-  border: 1px solid salmon;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

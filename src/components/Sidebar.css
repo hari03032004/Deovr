@@ -64,6 +64,20 @@
   list-style: none;
   height: 60px;
 }
+.stoggle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+}
+.cate{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  height: 50vh;
+  margin: 0;
+}
 .nav-text a {
   text-decoration: none;
   color: #151414;

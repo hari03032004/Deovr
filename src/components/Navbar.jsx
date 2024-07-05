@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
+
 import { Link } from "react-router-dom";
-import { SidebarData } from "./SidebarData";
+import { SidebarData,sideToggle,sidecategory } from "./SidebarData";
 import { IconContext } from "react-icons";
 import "./Sidebar.css";  
 
@@ -20,7 +21,7 @@ function Navbar() {
               <h1>DeoVR</h1>
             </li>
             {SidebarData.map((item, index) => {
-              if(index<8){
+              if(index<8 || index==9){
                 return (
                 <li key={index} className={item.cName}>
                   <Link to={item.path}>
@@ -45,15 +46,45 @@ function Navbar() {
                 
               );
               }
+              else{
+                return (
+                  <div className="toggle">
+                    <li key={index} className={item.cName}>
+                      <Link to={item.path}>
+                        {item.icon}
+                        <span >{item.title}</span>
+                      </Link>
+                    </li>
+                  </div> 
+              );
+              }
+            })}
+            <li className="stoggle">
+            {sideToggle.map((item,index)=>{
               return (
-                <li key={index} className={item.cName}>
+                
+                 <div key={index} className={item.cName}>
                   <Link to={item.path}>
                     {item.icon}
                     <span >{item.title}</span>
                   </Link>
-                </li>
+                 </div>
               );
             })}
+            </li>
+            <li className="cate">
+            {sidecategory.map((item,index)=>{
+              return (
+                
+                 <div key={index} className={item.cName}>
+                  <Link to={item.path}>
+                    {item.icon}
+                    <span >{item.title}</span>
+                  </Link>
+                 </div>
+              );
+            })}
+            </li>
           </ul>
         </nav>
       </IconContext.Provider>

@@ -7,13 +7,8 @@ import { MdOutlinePlaylistAddCheckCircle } from "react-icons/md";
 import { MdOutlineForum } from "react-icons/md";
 import { LiaDownloadSolid } from "react-icons/lia";
 import { FaCrown } from "react-icons/fa";
-<<<<<<< HEAD
 import { FaFacebook } from "react-icons/fa";
-=======
-import { FaFacebook } from "react-icons/fa6";
-import { IoMdBookmark } from "react-icons/io";
-import { FaRegCircle } from "react-icons/fa";
->>>>>>> cec5594d0f73f49b6716668247581fada4e2f578
+import { TbPhotoStar } from "react-icons/tb";
 import "./Sidebar.css";
 import ToggleButton from "./ToggleButton";
 
@@ -32,6 +27,7 @@ export const SidebarData = [
   },
   {
     title: "ORIGINALS",
+    icon: <TbPhotoStar color="grey"/>,
     path: "/Originals",
     cName: "nav-text",
   },
@@ -68,7 +64,7 @@ export const SidebarData = [
   {
     title: "WATCH LATER",
     path: "/WatchLater",
-    icon: <IoMdBookmark color = "lightgrey"/>,
+    icon: <MdOutlineForum color="grey"/>,
     cName: "nav-text",
   },
   {
@@ -79,28 +75,104 @@ export const SidebarData = [
   },
   {
     title: "FACEBOOK",
-<<<<<<< HEAD
     path: "/facebook",
     icon: <FaFacebook color="grey"/>,
-=======
-    path: "/FACEBOOK",
-    icon: <FaFacebook color = "lightgrey"/>,
     cName: "nav-text",
   },
-  {
-    title: "180",
-    icon: <ToggleButton />,
-    cName: "nav-text",
-  },
-  {
-    title: "360",
-    icon: <ToggleButton />,
->>>>>>> cec5594d0f73f49b6716668247581fada4e2f578
-    cName: "nav-text",
-  },
+
+];
+export const sideToggle=[
   {
     title: "180",
     icon: <ToggleButton/>,
-    cName: "nav-text",
-  }
-];
+    cName: "nav-text toggle",
+  },
+  {
+    title: "360",
+    icon: <ToggleButton/>,
+    cName: "nav-text toggle",
+  },
+  {
+    title: "8K",
+    icon: <ToggleButton/>,
+    cName: "nav-text toggle",
+  },
+  {
+    title: "Spatial audio",
+    icon: <ToggleButton/>,
+    cName: "nav-text toggle",
+  },
+  {
+    title: "120 fps",
+    icon: <ToggleButton/>,
+    cName: "nav-text toggle",
+  },
+  {
+    title: "Passthrough",
+    icon: <ToggleButton/>,
+    cName: "nav-text toggle",
+  },
+  {
+    title: "Show flat",
+    icon: <ToggleButton/>,
+    cName: "nav-text toggle",
+  }, 
+  {
+    title: "Premium only",
+    icon: <ToggleButton/>,
+    cName: "nav-text toggle",
+  },
+]
+export const sidecategory = [
+   
+  {
+    title: "Art",
+    path: "/facebook",
+    cName: "nav-text category",
+  }, 
+  {
+    title: "ASMR",
+    path: "/facebook",
+    cName: "nav-text category",
+  }, 
+  {
+    title: "Dance",
+    path: "/facebook",
+    cName: "nav-text category",
+  }, 
+  {
+    title: "Guided Tour",
+    path: "/facebook",
+    cName: "nav-text category",
+  }, 
+  {
+    title: "Gameplay",
+    path: "/facebook",
+    cName: "nav-text category",
+  }, 
+  {
+    title: "Music",
+    path: "/facebook",
+    cName: "nav-text category",
+  }, 
+  {
+    title: "Nature",
+    path: "/facebook",
+    cName: "nav-text category",
+  }, 
+  {
+    title: "Travel",
+    path: "/facebook",
+    cName: "nav-text category",
+  }, 
+  {
+    title: "Creators",
+    path: "/facebook",
+    cName: "nav-text category",
+  },
+  {
+    title: "View More",
+    path: "/ViewMore",
+    cName: "nav-text-View ",
+  },
+]
