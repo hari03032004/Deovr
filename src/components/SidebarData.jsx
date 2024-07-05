@@ -154,8 +154,8 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "View More",color:"#3390FF",
+    title: "View More",
     path: "/ViewMore",
-    cName: "nav-text ",
+    cName: "nav-text-View ",
   },
 ];
