@@ -4,7 +4,10 @@ import  '../index.css'
 import Button from '../components/Button'
 import Video from '../components/Video'
 
+
+
 export default function Home() {
+
   return (
     <div className="layout">
       <div className='nav-grid'></div>

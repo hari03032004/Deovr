@@ -1,4 +1,4 @@
-import React from "react";;
+import React from "react";
 import { IoMdVideocam } from "react-icons/io";
 import { CiCamera } from "react-icons/ci";
 import { MdOutlineSubscriptions } from "react-icons/md";
@@ -8,6 +8,7 @@ import { MdOutlineForum } from "react-icons/md";
 import { LiaDownloadSolid } from "react-icons/lia";
 import { FaCrown } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import { TbPhotoStar } from "react-icons/tb";
 import "./Sidebar.css";
 import ToggleButton from "./ToggleButton";
 
@@ -26,6 +27,7 @@ export const SidebarData = [
   },
   {
     title: "ORIGINALS",
+    icon: <TbPhotoStar color="grey"/>,
     path: "/Originals",
     cName: "nav-text",
   },
@@ -62,7 +64,7 @@ export const SidebarData = [
   {
     title: "WATCH LATER",
     path: "/WatchLater",
-    icon: <MdOutlinePlaylistAddCheckCircle color="grey"/>,
+    icon: <MdOutlineForum color="grey"/>,
     cName: "nav-text",
   },
   {
@@ -77,85 +79,12 @@ export const SidebarData = [
     icon: <FaFacebook color="grey"/>,
     cName: "nav-text",
   },
+
+];
+export const sideToggle=[
   {
     title: "180",
     icon: <ToggleButton/>,
     cName: "nav-text",
-  },
-  {
-    title: "360",
-    icon: <ToggleButton/>,
-    cName: "nav-text",
-  },
-  {
-    title: "8K",
-    icon: <ToggleButton/>,
-    cName: "nav-text",
-  },
-  {
-    title: "Spatial audio",
-    icon: <ToggleButton/>,
-    cName: "nav-text",
-  },
-  {
-    title: "120 fps",
-    icon: <ToggleButton/>,
-    cName: "nav-text",
-  },
-  {
-    title: "Passthrough",
-    icon: <ToggleButton/>,
-    cName: "nav-text",
-  },
-  {
-    title: "Show flat",
-    icon: <ToggleButton/>,
-    cName: "nav-text",
-  }, {
-    title: "Premium only",
-    icon: <ToggleButton/>,
-    cName: "nav-text",
-  },
-  {
-    title: "Art",
-    path: "/facebook",
-    cName: "nav-text",
-  }, {
-    title: "ASMR",
-    path: "/facebook",
-    cName: "nav-text",
-  }, {
-    title: "Dance",
-    path: "/facebook",
-    cName: "nav-text",
-  }, {
-    title: "Guided Tour",
-    path: "/facebook",
-    cName: "nav-text",
-  }, {
-    title: "Gameplay",
-    path: "/facebook",
-    cName: "nav-text",
-  }, {
-    title: "Music",
-    path: "/facebook",
-    cName: "nav-text",
-  }, {
-    title: "Nature",
-    path: "/facebook",
-    cName: "nav-text",
-  }, {
-    title: "Travel",
-    path: "/facebook",
-    cName: "nav-text",
-  }, {
-    title: "Creators",
-    path: "/facebook",
-    cName: "nav-text",
-  },
-  {
-    title: "View More",
-    path: "/ViewMore",
-    cName: "nav-text-View ",
-  },
+  }
 ];
