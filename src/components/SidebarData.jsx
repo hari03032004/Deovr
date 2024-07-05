@@ -102,5 +102,81 @@ export const SidebarData = [
     title: "180",
     icon: <ToggleButton/>,
     cName: "nav-text",
-  }
+  },
+  {
+    title: "360",
+    icon: <ToggleButton/>,
+    cName: "nav-text",
+  },
+  {
+    title: "8K",
+    icon: <ToggleButton/>,
+    cName: "nav-text",
+  },
+  {
+    title: "Spatial audio",
+    icon: <ToggleButton/>,
+    cName: "nav-text",
+  },
+  {
+    title: "120 fps",
+    icon: <ToggleButton/>,
+    cName: "nav-text",
+  },
+  {
+    title: "Passthrough",
+    icon: <ToggleButton/>,
+    cName: "nav-text",
+  },
+  {
+    title: "Show flat",
+    icon: <ToggleButton/>,
+    cName: "nav-text",
+  }, {
+    title: "Premium only",
+    icon: <ToggleButton/>,
+    cName: "nav-text",
+  },
+  {
+    title: "Art",
+    path: "/facebook",
+    cName: "nav-text",
+  }, {
+    title: "ASMR",
+    path: "/facebook",
+    cName: "nav-text",
+  }, {
+    title: "Dance",
+    path: "/facebook",
+    cName: "nav-text",
+  }, {
+    title: "Guided Tour",
+    path: "/facebook",
+    cName: "nav-text",
+  }, {
+    title: "Gameplay",
+    path: "/facebook",
+    cName: "nav-text",
+  }, {
+    title: "Music",
+    path: "/facebook",
+    cName: "nav-text",
+  }, {
+    title: "Nature",
+    path: "/facebook",
+    cName: "nav-text",
+  }, {
+    title: "Travel",
+    path: "/facebook",
+    cName: "nav-text",
+  }, {
+    title: "Creators",
+    path: "/facebook",
+    cName: "nav-text",
+  },
+  {
+    title: "View More",color:"#3390FF",
+    path: "/ViewMore",
+    cName: "nav-text ",
+  },
 ];
