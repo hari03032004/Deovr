@@ -16,6 +16,8 @@ import PublicPlaylists from "./routes/PublicPlaylists";
 import Home from "./routes/Home";
 import MySubscriptions from "./routes/MySubscriptions";
 import "./components/Sidebar.css";
+import "./routes/Signup"
+import Signup from "./routes/Signup";
 
 const AppLayout = () => (
   <>
@@ -73,5 +75,6 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <RouterProvider router={router} >
+  </RouterProvider>
 );

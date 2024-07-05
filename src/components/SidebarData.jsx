@@ -1,4 +1,4 @@
-import React from "react";;
+import React from "react";
 import { IoMdVideocam } from "react-icons/io";
 import { CiCamera } from "react-icons/ci";
 import { MdOutlineSubscriptions } from "react-icons/md";
@@ -7,7 +7,13 @@ import { MdOutlinePlaylistAddCheckCircle } from "react-icons/md";
 import { MdOutlineForum } from "react-icons/md";
 import { LiaDownloadSolid } from "react-icons/lia";
 import { FaCrown } from "react-icons/fa";
+<<<<<<< HEAD
 import { FaFacebook } from "react-icons/fa";
+=======
+import { FaFacebook } from "react-icons/fa6";
+import { IoMdBookmark } from "react-icons/io";
+import { FaRegCircle } from "react-icons/fa";
+>>>>>>> cec5594d0f73f49b6716668247581fada4e2f578
 import "./Sidebar.css";
 import ToggleButton from "./ToggleButton";
 
@@ -62,7 +68,7 @@ export const SidebarData = [
   {
     title: "WATCH LATER",
     path: "/WatchLater",
-    icon: <MdOutlinePlaylistAddCheckCircle color="grey"/>,
+    icon: <IoMdBookmark color = "lightgrey"/>,
     cName: "nav-text",
   },
   {
@@ -73,8 +79,23 @@ export const SidebarData = [
   },
   {
     title: "FACEBOOK",
+<<<<<<< HEAD
     path: "/facebook",
     icon: <FaFacebook color="grey"/>,
+=======
+    path: "/FACEBOOK",
+    icon: <FaFacebook color = "lightgrey"/>,
+    cName: "nav-text",
+  },
+  {
+    title: "180",
+    icon: <ToggleButton />,
+    cName: "nav-text",
+  },
+  {
+    title: "360",
+    icon: <ToggleButton />,
+>>>>>>> cec5594d0f73f49b6716668247581fada4e2f578
     cName: "nav-text",
   },
   {

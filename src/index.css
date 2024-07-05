@@ -267,12 +267,61 @@ video{
 }
 .line-align{
   display: flex;
-  width: 300px;
+  width: 150px;
   justify-content: flex-start;
-  align-items: center;
+  margin-right: 190px;
 }
 .line{
   height: 1.5px;
   width: 200px;
   background-color: lightgray;
+}
+.checkbox-email
+{
+  display:flex;
+  justify-content: flex-start;
+  padding-left: 19px;
+  padding-right: 25px;
+
+}
+.checkbox-agree{
+  display:flex;
+  justify-content: flex-start;
+  padding-right: 23px;
+
+}
+.checkbox-agree input[type="checkbox"] 
+{
+  margin-right: 10px;
+}
+.agree{
+  margin-left: 3px;
+  margin-right: auto;
+  font-weight: normal;
+}
+.agree:hover{
+  font-weight: bold;
+}
+.TC{
+  margin-left: auto;
+  background-color: transparent;
+  color: black;
+  border-color: transparent;
+  text-decoration: underline;
+  padding-right: 20px;
+}
+.TC :hover{
+  color: blue;
+}
+.email{
+  display: flex;
+  font-size: 0.85rem;
+  margin-right: 38px;
+  font-weight: normal;
+}
+.email:hover{
+  font-weight: bold;
+}
+.checkbox-email input[type="checkbox"] {
+  margin-right: 10px; /* Adjust the right margin to create space */
 }
