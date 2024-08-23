@@ -1,4 +1,4 @@
-import React from "react";
+import {useState} from "react";
 import { IoMdVideocam } from "react-icons/io";
 import { CiCamera } from "react-icons/ci";
 import { MdOutlineSubscriptions } from "react-icons/md";
@@ -9,74 +9,76 @@ import { LiaDownloadSolid } from "react-icons/lia";
 import { FaCrown } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { TbPhotoStar } from "react-icons/tb";
+import { FaCamera } from "react-icons/fa";
 import "./Sidebar.css";
 import ToggleButton from "./ToggleButton";
 
-export const SidebarData = [
+
+export const SidebarData =(color,size,changeColor) =>[
   {
     title: "VIDEOS",
-    path: "/",
-    icon: <IoMdVideocam color = "grey"/>,
+    path: "/videos",
+    icon: <IoMdVideocam color = {color} size={size} onMouseEnter={changeColor}/>,
     cName: "nav-text",
   },
   {
     title: "PHOTOS",
     path: "/Photos",
-    icon: <CiCamera color="grey"/>,
+    icon: <FaCamera color={color}  size={size}/>,
     cName: "nav-text",
   },
   {
     title: "ORIGINALS",
-    icon: <TbPhotoStar color="grey"/>,
+    icon: <TbPhotoStar color= {color} size={size}/>,
     path: "/Originals",
     cName: "nav-text",
   },
   {
     title: "GETVRPLAYER",
     path: "/GetVrPlayer",
-    icon: <LiaDownloadSolid color="grey"/>,
+    icon: <LiaDownloadSolid color= {color} size={size}/>,
     cName: "nav-text",
   },
   {
     title: "PREMIUM",
     path: "/Premium",
-    icon: <FaCrown  color="black"/>,
+    icon: <FaCrown  color="black" size={size}/>,
     cName: "nav-text premium",
   },
   {
     title: "MY FAVOURITES",
     path: "/MyFavourites",
-    icon: <CiHeart color="grey"/>,
+    icon: <CiHeart color= {color} size={size}/>,
     cName: "nav-text ",
   },
   {
     title: "MY SUBSCRIPTIONS",
     path: "/MySubscriptions",
-    icon: <MdOutlineSubscriptions color="grey"/>,
+    icon: <MdOutlineSubscriptions color= {color} size={size}/>,
     cName: "nav-text",
   },
   {
     title: "PUBLIC PLAYLISTS",
     path: "/PublicPlayists",
-    icon: <MdOutlinePlaylistAddCheckCircle color="grey"/>,
+    icon: <MdOutlinePlaylistAddCheckCircle color= {color} size={size}/>,
     cName: "nav-text",
   },
   {
     title: "WATCH LATER",
     path: "/WatchLater",
-    icon: <MdOutlineForum color="grey"/>,
+    icon: <MdOutlineForum color= {color} size={size}/>,
     cName: "nav-text",
   },
   {
     title: "FORUM",
     path: "/Forum",
-    icon: <MdOutlineForum color="grey"/>,
+    icon: <MdOutlineForum color= {color} size={size}/>,
     cName: "nav-text",
   },
   {
     title: "FACEBOOK",
     path: "/facebook",
-    icon: <FaFacebook color="grey"/>,
+    icon: <FaFacebook color= {color} size={size}/>,
     cName: "nav-text",
   },
 
@@ -173,6 +175,6 @@ export const sidecategory = [
   {
     title: "View More",
     path: "/ViewMore",
-    cName: "nav-text-View ",
+    cName: "nav-text view",
   },
 ]

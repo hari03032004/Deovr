@@ -4,6 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
   Outlet,
+  useOutletContext
 } from "react-router-dom";
 import Videos from "./routes/Videos";
 import Navbar from "./components/Navbar";
@@ -19,24 +20,19 @@ import "./components/Sidebar.css";
 import "./routes/Signup"
 import Signup from "./routes/Signup";
 import Signin from "./routes/Signin";
-
-const AppLayout = () => (
-  <>
-    <Navbar />
-    <Outlet />
-  </>
-);
+import Video360 from "./components/Video360"
+import Applayout from "./components/Applayout";
 
 const router = createBrowserRouter([
   {
-    element: <AppLayout />,
+    element: <Applayout />,
     children: [
       {
         path: "/",
         element: <Home />,
       },
       {
-        path: "/",
+        path: "/videos",
         element: <Videos />,
       },
       {
@@ -81,6 +77,5 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <RouterProvider router={router}>
-
   </RouterProvider>
 );

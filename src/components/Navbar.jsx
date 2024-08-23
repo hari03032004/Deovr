@@ -1,26 +1,35 @@
 import React, { useState } from "react";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { SidebarData,sideToggle,sidecategory } from "./SidebarData";
 import { IconContext } from "react-icons";
 import "./Sidebar.css";  
 
-function Navbar() {
-  const [sidebar, setSidebar] = useState(true);
-
-  const showSidebar = () => setSidebar(!sidebar);
-
+function Navbar(props) {
+  const [color , setColor] = useState("lightgray");
+  var size = "23px";
+  function changeColor(e) {
+    console.log("Hello");
+    setColor("gray")
+  }
+  const data = SidebarData(color,size,changeColor);
   return (
-    <>
-      <IconContext.Provider value={{ color: "black" }}>
-        <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+    <div className="main">
+      <IconContext.Provider value={{ color: "black" }}> 
+        <nav className={props.sidebar ? "nav-menu active" : "nav-menu"}>
+          <div className="logo">
+            <Link to="/">
+              <div className="heading-close">
+                <h1>OTL VR</h1>
+                {props.close && <IoClose size="25px" onClick={props.showSidebar}/>}
+              </div>
+            </Link>
+          </div>
           <ul className="nav-menu-items" >
-            <li className="logo">
-              <h1>DeoVR</h1>
-            </li>
-            {SidebarData.map((item, index) => {
+            {data.map((item, index) => {
               if(index<8 || index==9){
                 return (
                 <li key={index} className={item.cName}>
@@ -88,7 +97,7 @@ function Navbar() {
           </ul>
         </nav>
       </IconContext.Provider>
-    </>
+    </div>
   );
 }
 

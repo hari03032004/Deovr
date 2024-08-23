@@ -6,10 +6,10 @@ function Button(props) {
   const bgcolor = props.bgcolor;
   const color = props.color;
   return (
-      <button className="button" style={{ width: Width ,backgroundColor: bgcolor,color:color,border:"none"}}>
+      <button className="button" style={{ backgroundColor: bgcolor,color:color,border:"none"}}>
         {props.icon=="crown" && <FaCrown  color="black"/>}
         {props.icon=="upload" && <MdCloudUpload  color="black"/>}
-        {props.name}
+        <p>{props.name}</p>
       </button>
     
   );

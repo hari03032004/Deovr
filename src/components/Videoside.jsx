@@ -1,10 +1,11 @@
 import React from 'react'
 import "../index.css"
+import "./video.css"
 import { CiMenuKebab } from "react-icons/ci";
 import { FaCrown } from "react-icons/fa";
 import Like from './Like';
 import Comment from "./Comment";
-import { Link ,useOutletContext} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 export default function Video(props) {
   const handleMouseEnter = (event) => {
@@ -15,17 +16,19 @@ export default function Video(props) {
     event.target.pause();
   };
   return (
-    <div className='video-container'>
+    <div className='video-container-side'>
       <div className='video' >
-        <video 
-          src='/src/assets/video360.mp4' 
-          typeof='type="video/mp4"'
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          muted
-          autoPlay={false}
-          >
-        </video>
+        <Link to="/Videos">
+          <video 
+            src='/src/assets/video360.mp4'
+            typeof='type="video/mp4"'
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            muted
+            autoPlay={false}
+            >
+          </video>
+        </Link>
         <div className='premium-icon'>
           <FaCrown  color="black"/>
         </div>
@@ -36,9 +39,8 @@ export default function Video(props) {
           <p>24</p>
         </div>
       </div>
-      <div className='video-content'>
+      <div className='video-content-side'>
         <div className='video-title'>
-          <div className='video-profile'></div>
           <div className='video-name'>Sample Video for the deoVR</div>
           <CiMenuKebab />
         </div>
